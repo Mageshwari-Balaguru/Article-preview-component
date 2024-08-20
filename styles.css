@@ -1,0 +1,106 @@
+:root{
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+    --fontfamily:'Manrope'
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--fontfamily);
+    background-color: var(--Light-Grayish-Blue);
+}
+.container{
+    display:flex;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction:column;
+    max-width:65%;
+    margin:3rem;
+    background-color: white;
+    position:relative;
+    border-radius: 10px;
+}
+.card__img{
+    position:relative;
+    border-radius: 10px 10px 0 0;
+}
+.card__textwrapper{
+    padding:2rem;
+}
+.paddingbottom{
+    padding-bottom: 1rem;
+}
+.card__title{
+    color:var(--Very-Dark-Grayish-Blue);
+}
+.card__description{
+    color:var(--Grayish-Blue);
+}
+.card__author{
+    display:flex;
+    
+}
+.card__author__img{
+    width:50px;
+    border-radius: 50%;
+    margin-right:20px;
+}
+.icons{
+    display:hide;
+}
+.card__author__btn{
+    width:50px;
+    border-radius: 100%;
+    padding:.5rem;
+    border: none;
+    margin-left: auto;
+    
+}
+.card__author__name{
+    color:var(--Very-Dark-Grayish-Blue);
+}
+.card__author__date{
+    color:var(--Grayish-Blue);
+}
+.share__icons{
+    background-color:var(--Very-Dark-Grayish-Blue);
+    display:flex;
+    padding:20px;
+    color:var(--Grayish-Blue);
+    border-radius: 10px;
+    display:none;
+    transition:all 0.5s ease-in-out;
+    justify-content: space-around;
+    cursor:pointer;
+
+}
+
+@media only screen and (min-width:800px){
+    .container{
+        margin:5rem auto;
+    }
+
+    .card{
+        display:flex;
+        flex-direction:row;
+        max-width: 60%;
+    }
+    .card__img{
+        width:300px;
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
